@@ -5,7 +5,28 @@ const inventoryData = require("./data/inventory.json");
 const app = express();
 const PORT = 5000;
 
-app.use(cors());
+const allowedOrigins = [
+  "http://localhost:5500",
+  "http://127.0.0.1:5500",
+  "https://inventory-search-project-six.vercel.app",
+];
+
+app.use(
+  cors({
+    origin: function (origin, callback) {
+      if (!origin) return callback(null, true);
+
+      if (allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        console.log("Blocked by CORS:", origin); // debug
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
+  })
+);
+
+
 app.use(express.json());
 
 // console.log("Inventory Data Loaded:", inventoryData);

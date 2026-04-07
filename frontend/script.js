@@ -1,3 +1,4 @@
+
 const searchQuery = document.getElementById("searchQuery");
 const categoryFilter = document.getElementById("categoryFilter");
 const minPrice = document.getElementById("minPriceRange");
@@ -82,8 +83,10 @@ async function fetchProducts(query = "", category = "", min = "", max = "") {
   if (max) params.append("maxPrice", max);
 
   try {
+    const BACKENDAPI = "https://inventory-search-project-y75r.onrender.com/search";
+    console.warn(BACKENDAPI);
     const response = await fetch(
-      `http://localhost:5000/search?${params.toString()}`,
+      `${BACKENDAPI}?${params.toString()}`,
     );
     const data = await response.json();
 

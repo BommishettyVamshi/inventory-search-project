@@ -1,2 +1,5 @@
 #nodemoduels 
 node_modules/
+
+#env files
+*.env
