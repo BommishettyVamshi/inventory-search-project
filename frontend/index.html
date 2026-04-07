@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventory Search</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header-container">
+      <h1 class="heading">Inventory Search</h1>
+    </header>
+    <div class="main-container">
+      <aside class="filters-content">
+        <div class="filter-heading-container">
+          <h2 class="filter-heading">Apply Filters</h2>
+        </div>
+        <div class="filters-container">
+          <section class="category-filter-section">
+            <h4>Category:</h4>
+            <select id="categoryFilter" class="category-select-container">
+              <option id="allCategories" value="">All Categories</option>
+              <option id="electronics" value="Electronics">Electronics</option>
+              <option id="clothing" value="Clothing">Clothing</option>
+              <option id="accessories" value="Accessories">Accessories</option>
+              <option id="furniture" value="Furniture">Furniture</option>
+            </select>
+          </section>
+          <section class="price-filter-section">
+            <h4>Minimum Price:</h4>
+            <div id="minPriceContainer" class="range-container">
+              <input
+                type="range"
+                id="minPriceRange"
+                min="100"
+                max="1000"
+                value="100" />
+              <div class="tooltip" id="minPriceTooltip">100</div>
+            </div>
+          </section>
+          <section class="price-filter-section">
+            <h4>Maximum Price:</h4>
+            <div id="maxPriceContainer" class="range-container">
+              <input
+                type="range"
+                id="maxPriceRange"
+                min="100"
+                max="1000"
+                value="1000" />
+              <div class="tooltip" id="maxPriceTooltip">1000</div>
+            </div>
+          </section>
+        </div>
+      </aside>
+      <main class="search-results-container">
+        <section class="search-container">
+          <input
+            type="search"
+            id="searchQuery"
+            placeholder="Search products..."
+            class="search-input" />
+        </section>
+        <section class="products-container">
+  
+            <p id="errorPara" class="error-para"></p>
+            <button id="resetButton" class="reset-button">Reset Filters</button>
+
+          <table id="productsTable" class="products-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Supplier</th>
+              </tr>
+            </thead>
+            <tbody id="productsTableBody">
+              <tr>
+                <td class="product-column">Laptop</td>
+                <td class="product-column">Electronics</td>
+                <td class="product-column">999.99</td>
+                <td class="product-column">TechSupplier Inc.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

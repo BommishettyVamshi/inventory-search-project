@@ -1,0 +1,23 @@
+[
+  { "id": 1, "name": "Wireless Mouse", "category": "electronics", "price": 250, "supplier": "Alpha Tech" },
+  { "id": 2, "name": "Bluetooth Headphones", "category": "electronics", "price": 850, "supplier": "Beta Supplies" },
+  { "id": 3, "name": "Cotton T-Shirt", "category": "clothing", "price": 300, "supplier": "Gamma Apparel" },
+  { "id": 4, "name": "Sports Shoes", "category": "clothing", "price": 950, "supplier": "Delta Footwear" },
+  { "id": 5, "name": "Office Chair", "category": "furniture", "price": 650, "supplier": "Epsilon Furnishings" },
+  { "id": 6, "name": "Notebook Pack", "category": "accessories", "price": 200, "supplier": "Zeta Stationery" },
+  { "id": 7, "name": "Desk Lamp", "category": "furniture", "price": 600, "supplier": "Eta Lighting" },
+  { "id": 8, "name": "Backpack", "category": "accessories", "price": 700, "supplier": "Theta Bags" },
+  { "id": 9, "name": "Power Bank", "category": "electronics", "price": 999, "supplier": "Iota Electronics" },
+  { "id": 10, "name": "Yoga Mat", "category": "accessories", "price": 400, "supplier": "Kappa Fitness" },
+  { "id": 11, "name": "Sunglasses", "category": "accessories", "price": 350, "supplier": "Lambda Optics" },
+  { "id": 12, "name": "Coffee Table", "category": "furniture", "price": 750, "supplier": "Mu Furnishings" },
+  { "id": 13, "name": "Leather Jacket", "category": "clothing", "price": 450, "supplier": "Nu Apparel" },
+  { "id": 14, "name": "Electric Kettle", "category": "electronics", "price": 500, "supplier": "Xi Kitchenware" },
+  { "id": 15, "name": "Fitness Tracker", "category": "electronics", "price": 800, "supplier": "Omicron Wearables" },
+  { "id": 16, "name": "Gaming Keyboard", "category": "electronics", "price": 900, "supplier": "Pi Tech" },
+  { "id": 17, "name": "Desk Chair", "category": "furniture", "price": 750, "supplier": "Rho Furnishings" },
+  { "id": 18, "name": "Running Shorts", "category": "clothing", "price": 180, "supplier": "Sigma Sportswear" },
+  { "id": 19, "name": "LED Monitor", "category": "electronics", "price": 950, "supplier": "Tau Monitors" },
+  { "id": 20, "name": "Wireless Speaker", "category": "electronics", "price": 550, "supplier": "Upsilon Audio" }
+]
+
