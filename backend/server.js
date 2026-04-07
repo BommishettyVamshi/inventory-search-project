@@ -42,7 +42,7 @@ app.get("/search", (req, res) => {
       return matchesQuery && matchesCategory && matchesPrice;
     });
 
-    res.status(201).json({ products: filteredProducts });
+    res.status(200).json({ products: filteredProducts });
   } catch (error) {
     res.status(500).json({ error: "Internal Server Error" });
   }
